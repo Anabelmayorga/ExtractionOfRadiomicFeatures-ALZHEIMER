@@ -9,6 +9,7 @@ Posteriormente, estas características son clasificadas mediante algoritmos de a
 Se ha utilizado la base de datos pública OASIS-1 (Open Access Series of Imaging Studies), la cual proporciona imágenes de resonancia magnética cerebral de pacientes sanos y con diagnóstico de Alzheimer.
 
 - Metodología
+
 Preprocesamiento y segmentación: Las imágenes han sido preprocesadas y segmentadas mediante herramientas como FreeSurfer, por OASIS-1, seleccionando el hipocampo como ROI.
 
 Extracción de características: Se han calculado características radiómicas siguiendo el estándar IBSI (Zwanenburg et al., 2020), incluyendo variables de forma, intensidad y textura (GLCM, GLSZM, etc.).

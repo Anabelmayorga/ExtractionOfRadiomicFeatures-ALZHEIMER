@@ -1,4 +1,3 @@
-# Código modificado y extendido del código original máquinas de Vector Soporte (SVM) con Python por Joaquín Amat Rodrigo, disponible con licencia CC BY-NC-SA 4.0 en https://www.cienciadedatos.net/documentos/py24-svm-python.html
 
 # Tratamiento de datos
 import pandas as pd

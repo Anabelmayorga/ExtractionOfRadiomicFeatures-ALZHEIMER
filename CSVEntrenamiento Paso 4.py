@@ -29,10 +29,7 @@ columnas_validas = datos.columns.difference(['paciente', 'diagnostico','diagnost
 combinaciones_pares = list(combinations(columnas_validas, 2))
 
 # Grid de hiperparámetros
-param_grid = {
-    'C': np.logspace(2, 6, 50
-                     ),
-}
+param_grid = {'C': np.logspace(2, 6, 50)}
 
 # Lista para almacenar resultados
 resultados_modelos = []
@@ -52,14 +49,7 @@ for carac_x, carac_y in tqdm(combinaciones_pares, desc="Combinaciones de caracte
 
         # Búsqueda por validación cruzada
         grid = GridSearchCV(
-            estimator=SVC(kernel="rbf", gamma='scale', class_weight='balanced'),
-            param_grid=param_grid,
-            scoring='accuracy',
-            n_jobs=-1,
-            cv=8,
-            verbose=0,
-            return_train_score=True
-        )
+            estimator=SVC(kernel="rbf", gamma='scale', class_weight='balanced'), param_grid=param_grid, scoring='accuracy', n_jobs=-1,cv=8,verbose=0,return_train_score=True)
 
         # Ajustar el modelo
         grid.fit(X_train, y_train)

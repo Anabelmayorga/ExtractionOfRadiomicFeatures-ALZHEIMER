@@ -108,7 +108,7 @@ print(f"Análisis completado y resultados guardados en 'resultados_modelos_SVM.x
 import math
 
 # Mostrar matrices de confusión en bloques de 20
-matrices_por_pagina = 30
+matrices_por_pagina = 20
 num_matrices = len(matrices_conf_para_plot)
 num_paginas = math.ceil(num_matrices / matrices_por_pagina)
 

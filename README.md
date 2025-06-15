@@ -1,30 +1,33 @@
-- Este repositorio contiene el código y los datos empleados en el Trabajo de Fin de Grado (TFG) titulado:
-“Extracción y clasificación de imágenes biomédicas cerebrales para la identificación de anomalías"
+- This repository contains the code and data used in the Bachelor's Thesis (TFG) titled:
+“Extraction and Classification of Biomedical Brain Images for Anomaly Detection.”
 
-- Descripción del proyecto
-El objetivo de este proyecto es desarrollar un sistema de ayuda al diagnóstico asistido por computadora (CAD) para la detección de la Enfermedad de Alzheimer, mediante el análisis de imágenes de resonancia magnética (MRI) cerebrales, utilizando técnicas de radiómica para la extracción de características morfológicas y de textura, centradas en el hipocampo como región de interés (ROI).
+- Project Description
+The objective of this project is to develop a computer-aided diagnosis (CAD) system for the detection of Alzheimer’s Disease through the analysis of brain magnetic resonance imaging (MRI), using radiomics techniques to extract morphological and texture features, focusing on the hippocampus as the region of interest (ROI).
 
-Posteriormente, estas características son clasificadas mediante algoritmos de aprendizaje automático, concretamente máquinas de soporte vectorial (SVM), con el fin de identificar de forma temprana a los pacientes con EA.
+These features are subsequently classified using machine learning algorithms, specifically support vector machines (SVM), in order to identify Alzheimer’s Disease (AD) at an early stage.
 
-Se ha utilizado la base de datos pública OASIS-1 (Open Access Series of Imaging Studies), la cual proporciona imágenes de resonancia magnética cerebral de pacientes sanos y con diagnóstico de Alzheimer.
+The publicly available OASIS-1 (Open Access Series of Imaging Studies) database has been used, which provides brain MRI scans of both healthy individuals and patients diagnosed with Alzheimer’s Disease.
 
-- Metodología
+- Methodology
+* Preprocessing and Segmentation:
+The images were preprocessed and segmented using tools such as FreeSurfer (provided by OASIS-1), selecting the hippocampus as the ROI.
 
-Preprocesamiento y segmentación: Las imágenes han sido preprocesadas y segmentadas mediante herramientas como FreeSurfer, por OASIS-1, seleccionando el hipocampo como ROI.
+* Feature Extraction:
+Radiomic features were extracted following the IBSI standard (Zwanenburg et al., 2020), including shape, intensity, and texture features (GLCM, GLSZM, etc.).
 
-Extracción de características: Se han calculado características radiómicas siguiendo el estándar IBSI (Zwanenburg et al., 2020), incluyendo variables de forma, intensidad y textura (GLCM, GLSZM, etc.).
+* Classification:
+SVM models were trained using different combinations of radiomic feature pairs to evaluate their diagnostic performance.
 
-Clasificación: Se han entrenado modelos de SVM utilizando combinaciones de pares de características radiómicas para evaluar su rendimiento diagnóstico.
+* Evaluation:
+Performance metrics include accuracy, precision, recall, and F1-Score, achieving promising results for both the right and left hippocampus.
 
-Evaluación: Las métricas de rendimiento incluyen accuracy, precision, recall y F1-Score, obteniendo resultados prometedores tanto en el hipocampo derecho como izquierdo.
+The project was developed using Python 3.8.
 
+- License
+This project is published under the MIT License.
+You can find the full license text in the LICENSE file.
 
-- Este proyecto ha sido desarrollado en Python 3.8.
-
-- Licencia
-Este proyecto está publicado bajo licencia MIT. Puedes consultarla en el archivo LICENSE.
-
-- Autor
-Trabajo de Fin de Grado (TFG) realizado por Anabel Mayorga Ruiz
-Facultad de Ciencias — Universidad de Córdoba
-Año académico: 2025
+- Author
+Bachelor’s Thesis (TFG) by Anabel Mayorga Ruiz
+Faculty of Sciences — University of Córdoba
+Academic Year: 2025

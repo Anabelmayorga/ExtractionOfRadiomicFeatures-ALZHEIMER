@@ -1,5 +1,5 @@
 - This repository contains the code and data used in the Bachelor's Thesis (TFG) titled:
-“Extraction and Classification of Biomedical Brain Images for Anomaly Detection.”
+“Feature Extraction and Automatic Classification of Biomedical Brain Images for Anomaly Detection.”
 
 - Project Description
 The objective of this project is to develop a computer-aided diagnosis (CAD) system for the detection of Alzheimer’s Disease through the analysis of brain magnetic resonance imaging (MRI), using radiomics techniques to extract morphological and texture features, focusing on the hippocampus as the region of interest (ROI).

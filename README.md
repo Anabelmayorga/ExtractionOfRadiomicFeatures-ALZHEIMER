@@ -28,6 +28,6 @@ This project is published under the MIT License.
 You can find the full license text in the LICENSE file.
 
 - Author
-Bachelor’s Thesis (TFG) by Anabel Mayorga Ruiz
+Bachelor’s Thesis (TFG) by Anabel Mayorga Ruiz and the responsible tutor is Aurora Saez Manzano.
 Faculty of Sciences — University of Córdoba
 Academic Year: 2025
